@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Frontend Mentor | Social Media Dashboard</title>
   <link rel="stylesheet" href="/dist/style.css">
   <script defer src="/dist/script.js"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -18,12 +18,27 @@
   </style>
 </head>
 <body>
-
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
+  <header class="header container">
+    <div class="header__title">
+      <h1>Social Media Dashboard</h1>
+      Total Followers: 23,004
+    </div>
+    <fieldset class="header__toggle toggle" aria-label="theme toggle" role="radiogroup">
+      <label for="dark">Dark</label>
+      <div class="toggle__wrapper">
+        <input type="radio" name="theme" id="dark" />
+        <input type="radio" name="theme" id="system" checked/>
+        <input type="radio" name="theme" id="light" />
+        <span aria-hidden="true" class="toggle__background"></span>
+        <span aria-hidden="true" class="toggle__button"></span>
+      </div>
+      <label for="dark">System Pref</label>
+      <label for="light">Light</label>
+      <!-- Dark Mode -->
+    </fieldset>
+  </header>
+  <main>
+    <section></section>
   
 
   @nathanf
@@ -81,7 +96,9 @@
   Total Views
   1407
   12%
-  
+  </main>
+
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
